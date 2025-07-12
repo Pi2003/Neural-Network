@@ -242,12 +242,6 @@ Perfect for:
 4. **Single Batch**: Processes entire dataset at once (no mini-batching)
 5. **Fixed Architecture**: No skip connections or advanced architectures
 
-## 📚 Mathematical References
-
-- **Deep Learning** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
-- **Neural Networks and Deep Learning** by Michael Nielsen
-- **Pattern Recognition and Machine Learning** by Christopher Bishop
-
 ## 🤝 Contributing
 
 This is an educational implementation. Contributions that improve:
