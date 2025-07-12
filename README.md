@@ -71,27 +71,39 @@ Gradient computation using chain rule:
 ## 📁 Project Structure
 
 ```
-neural_network/
-├── paste.txt                 # Main implementation file
-├── README.md                 # This file
-└── examples/                 # Usage examples (if added)
+Neural-Network/
+├── neural_network_model.py   # Core neural network implementation
+├── iris_classification.py    # Classification example with Iris dataset
+├── housing_data_regression.py # Regression example with housing data
+├── data/                     # Dataset folder
+├── README.md                 # This documentation
+└── LICENSE                   # MIT License
 ```
 
 ## 🚀 Quick Start
 
 ### Installation
 ```bash
-pip install numpy pandas
+# Clone the repository
+git clone https://github.com/[your-username]/Neural-Network.git
+cd Neural-Network
+
+# Install required dependencies
+pip install numpy pandas scikit-learn
 ```
 
 ### Basic Usage
 
 #### Classification Example
 ```python
+# Run the Iris classification example
+python iris_classification.py
+
+# Or import and use the neural network directly
+from neural_network_model import *
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
 
 # Load your data
 X = pd.DataFrame(your_features)
@@ -119,6 +131,13 @@ predictions = classification_prediction(X_test, model, hidden_layers)
 
 #### Regression Example
 ```python
+# Run the housing data regression example
+python housing_data_regression.py
+
+# Or import and use the neural network directly
+from neural_network_model import *
+import pandas as pd
+
 # Load your data
 X = pd.DataFrame(your_features)
 y = pd.Series(your_targets)
@@ -208,6 +227,13 @@ Perfect for:
 - Researchers implementing custom architectures
 - Anyone wanting to understand the mathematical foundations of deep learning
 
+### 🗂️ File Descriptions
+
+- **`neural_network_model.py`**: Core implementation containing all neural network functions
+- **`iris_classification.py`**: Complete classification example using the famous Iris dataset
+- **`housing_data_regression.py`**: Regression example demonstrating continuous value prediction
+- **`data/`**: Directory containing sample datasets for testing and examples
+
 ## 🐛 Known Limitations
 
 1. **No GPU Support**: CPU-only implementation
@@ -215,17 +241,6 @@ Perfect for:
 3. **Limited Regularization**: No dropout, batch normalization, or weight decay
 4. **Single Batch**: Processes entire dataset at once (no mini-batching)
 5. **Fixed Architecture**: No skip connections or advanced architectures
-
-## 🔮 Future Enhancements
-
-- [ ] Mini-batch gradient descent
-- [ ] Advanced optimizers (Adam, RMSprop)
-- [ ] Regularization techniques
-- [ ] Batch normalization
-- [ ] Convolutional layers
-- [ ] GPU acceleration with CuPy
-- [ ] Model serialization/deserialization
-- [ ] Advanced metrics and visualization
 
 ## 📚 Mathematical References
 
